@@ -172,6 +172,7 @@ input:focus {
 .archive article.post:hover
 {
 	background-color: whitesmoke;
+	transform: scale(1.05);
 }
 .home article.post img,
 .archive article.post  img
