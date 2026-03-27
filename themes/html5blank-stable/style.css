@@ -99,7 +99,7 @@ input:focus {
 	width:95%;
 	margin:0 auto;
 	position:relative;
-	background-image: url("http://stalhandske.dk/wp-content/themes/html5blank-stable/img/behindTitle.png");
+	background-image: url("img/behindTitle.png");
     background-repeat: no-repeat;
     background-position: center top;
 }
