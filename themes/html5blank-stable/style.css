@@ -1,0 +1,430 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+	min-height: 100%;
+}
+body {
+	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:#444;
+	min-height: 100%;
+}main{	display: block;	margin: auto;}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;		height: auto;
+}
+a {
+	color:#444;
+	text-decoration:none;
+	transition: all .1s ease-out;
+}
+p  > a {
+	color:#444;
+	text-decoration:underline;
+	transition: all .1s ease-out;
+}
+a:hover {
+	color:#888;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+#page-title
+{
+	text-align: center;
+	font-size: 30px;
+	margin: 1.67em 0 0;
+	letter-spacing:10px;
+}
+.embed
+{
+	display: block;
+	margin: auto;
+}
+.video-container {    position: relative;    padding-bottom: 56.25%;    padding-top: 30px; height: 0; overflow: hidden;} .video-container iframe,.video-container object,.video-container embed {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	max-width:900px;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+	background-image: url("http://stalhandske.dk/wp-content/themes/html5blank-stable/img/behindTitle.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+/* header */
+.header {
+	
+}
+/* logo */
+.logo {
+
+}
+.logo-img {
+
+}
+/* nav */
+.nav {
+
+}
+.nav ul
+{
+	height: 50px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.nav li
+{
+	font-size:20px;
+	
+	display: inline;
+	
+}
+.nav li a
+{
+	padding: 10px;
+}
+.nav li a:hover
+{
+	background-color: rgba(240,240,240,.5);
+}
+/* sidebar */
+.sidebar {
+
+}
+/* footer */
+.footer {
+	text-align: center;
+	/*position: fixed;*/
+	width: 100%;
+	left: 0px;
+	bottom: 0px;
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 10px -5px 10px rgba(255, 255, 255, 0.9);
+}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+/* INDEX */
+.home article.post,
+.archive article.post
+{
+	width: 190px;
+	display: inline-table;
+	margin: 16px;
+	background-color: rgba(1,1,1,0);
+	transition: all .1s ease-out;
+}
+.home article.post:hover,
+.archive article.post:hover
+{
+	background-color: whitesmoke;
+}
+.home article.post img,
+.archive article.post  img
+{
+	-webkit-filter: brightness(1);
+	transition: all .1s ease-out;
+}
+.home article.post:hover img,
+.archive article.post:hover  img
+{
+	-webkit-filter: brightness(1.1);
+}
+.article-link
+{
+	display: block;
+	padding: 20px 20px 0px 20px;
+}
+.home article a[rel=tag],
+.archive article a[rel=tag]
+{
+	display: block;
+	padding: 0px 20px 20px 20px;
+}
+
+.home h2,
+.archive h2
+{
+	font-size: 15px;
+}
+/* SINGLE POST */
+
+.single article
+{
+	font-size: 17px;
+}
+
+/* ABOUT */
+
+#ego-table
+{
+	font-family: courier new;
+	font-size: 20px;
+}
+.ego-cell-small
+{
+	min-width: 160px;
+	padding: 2px;
+}
+.floatleft
+{
+	float: left;
+}
+.about-wrapper
+{
+	height: 40px;
+}
+
+/* MISC */
+.MISC
+{
+	
+}
+.MISC *
+{
+	display: block;
+	margin: 70px auto;
+}
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'Font-Name';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/font-name.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:0px) {
+main{	max-width:228px;}#page-title{	font-size: 30px;}
+}
+@media only screen and (min-width:490px) {
+main{	max-width:448px;}
+}
+@media only screen and (min-width:768px) {
+main{	max-width:673px;}
+}
+@media only screen and (min-width:1024px) {
+main{	max-width:900px;}
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+
+}
+.bypostauthor {
+
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
