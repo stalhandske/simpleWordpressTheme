@@ -16,4 +16,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./themes/html5blank-stable/
-          server-dir: /www/wp-content/themes/html5blank-stable/
+          server-dir: /customers/1/c/1/stalhandske.dk/httpd.www/wp-content/themes/html5blank-stable/
